@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Whereto?</title>
+	
+	<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+<style type="text/css">
+.clockStyle{
+	color:#D2738A;
+	font-weight:bold;
+	font-size:50px;
+}
+</style>
+
+<link rel="shortcut icon" href="bg3.gif">
+
+</head>
+
+<body bgcolor='#000000' onload="startTime()" background="bg_78.gif">
+	<center>
+		<img src="lain_t.gif" style="height:370px;">
+		<div style="width:400px;height:217px;border:11px solid #D2738A; background-color:#000000">
+			<b>
+			<font size="4" style="color: #3f2331">
+				<a href="http://4chan.org/" style="color: #D2738A">4chan.org</a>
+				<br>
+				<a href="http://boards.4chan.org/g/" style="color: #D2738A">/g/</a> :: 
+				<a href="http://boards.4chan.org/wsg/" style="color: #D2738A">/wsg/</a> :: 
+				<a href="http://boards.4chan.org/sci/" style="color: #D2738A">/sci/</a> :: 
+				<a href="http://boards.4chan.org/a/" style="color: #D2738A">/a/</a> :: 
+				<a href="http://boards.4chan.org/r9k/" style="color: #D2738A">/r9k/</a>
+				
+				<hr style="border-color:#D2738A; width:93%">
+				<a href="https://www.reddit.com/" style="color: #D2738A">reddit.com</a>
+				<br>
+				<a href="https://www.reddit.com/r/math/" style="color: #D2738A">/r/math/</a> :: 
+				<a href="https://www.reddit.com/r/DeepIntoYouTube/" style="color: #D2738A">/r/hmmm/</a> :: 
+				<a href="https://www.reddit.com/r/anime/" style="color: #D2738A">/r/anime/</a>
+				
+				<hr style="border-color:#D2738A; width:93%">
+				<b style="color:#D2738A">other / <a href="file:///C:/Users/Magnus/Dropbox/Books/" style="color: #D2738A"> books</a></b>
+				<br>
+				<a href="https://www.youtube.com/feed/subscriptions" style="color: #D2738A">youtube</a> :: 
+				<a href="https://projecteuler.net/archives" style="color: #D2738A">projecteuler</a> :: 
+				<a href="https://www.twitch.tv/directory/following" style="color: #D2738A">twitch</a> :: 
+				<a href="https://www.facebook.com/" style="color: #D2738A">facebook</a>
+				<br>
+				<a href="https://www.masterani.me/" style="color: #D2738A">masterani</a> :: 
+				<a href="https://www.netflix.com/browse" style="color: #D2738A">netflix</a> :: 
+				<a href="https://www.lectio.dk/lectio/289/login.aspx" style="color: #D2738A">lectio</a> :: 
+				<a href="http://www.wolframalpha.com/" style="color: #D2738A">wolfram</a>
+				<br>
+				<a href="file:///C:/Users/Magnus/Dropbox/Books/Realbook%20in%20Bb/Volume-1-Bb.pdf" style="color: #D2738A">real I</a> ::
+				<a href="file:///C:/Users/Magnus/Dropbox/Books/Realbook%20in%20Bb/Volume-2-Bb.pdf" style="color: #D2738A">real II</a> ::
+				<a href="file:///C:/Users/Magnus/Dropbox/Books/Math/Naive_Set_Theory.pdf" style="color: #D2738A">set theory</a> ::
+				<a href="file:///C:/Users/Magnus/Dropbox/Books/Math/M_Abstract_Algebra.pdf" style="color: #D2738A">abstract algebra</a>
+				
+				
+			</font>
+			</b>
+		</div>
+		<br>
+		<hr style="border-color:#D2738A; width:30%; height:2px; background-color:#000000">
+		<br>
+		<div id="txt" class="clockStyle" style="width:290px;border:11px solid #D2738A; background-color:#000000"></div>
+		<i><b><font size="2" style="color: #2A161B"> Ctrl+Shift+T </font></b></i>
+	</center>
+	<div style="position: absolute; bottom: 10px; right: 30px">
+		<a href="https://fauux.neocities.org/">
+			<img src="lain_float.gif" style="height:150px;">
+		</a>
+	</div>
+</body>
